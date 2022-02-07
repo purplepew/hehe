@@ -1,0 +1,57 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	min-height: 100vh;
+	width: 100%;
+	background: rgba(10,10,10,1);
+}
+body::after{
+	content: 'scroll up';
+	display: block;
+	color: white;
+	margin: 50px;
+}
+
+
+.bg{
+	background-image: url('background-star.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 200vh;
+	width: 100%;
+	margin-bottom: 400px;
+}
+
+
+.quote{
+	font-family: Georgia;
+	color: white;
+	position: absolute;
+	top: 80%;
+	background: rgba(10,10,10, .4);
+	padding: 50px;
+	width: 100%;
+	text-align: center;
+}
+
+
+.quote2{
+	font-family: Georgia;
+	color: white;
+	position: absolute;
+	top: 140%;
+	background: rgba(10,10,10, .4);
+	padding: 50px;
+	width: 100%;
+	text-align: center;
+	opacity: 0;
+	transition: opacity 1s linear;
+}
+
+@media screen and (min-width: 700px){
+	*{
+		display: none;
+	}
+}
